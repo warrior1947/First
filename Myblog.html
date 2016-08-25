@@ -1,0 +1,136 @@
+<head>
+  <title>My Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <style>
+  	.navbar{
+  		
+  		
+  		font-size: 20px;
+  		letter-spacing: 4px;
+  		
+  	}
+  	.navbar li a, .navbar .navbar-brand {
+    color: orange;
+<!--shruti's part get coloured by this-->
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: black !important;
+}
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.0);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 40px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+
+}
+
+.navbar-brand{
+	font-size: 25px;
+	
+}
+
+.container{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	
+}
+.bg-2{
+  background-color: #FFB6C1;
+}
+.bg-4{
+	background-color: gray;
+}
+
+
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top opaque-navbar">
+	
+	<div class="navbar-header">
+	<a class="navbar-brand" href="#">Shruti</a>
+	</div>
+	<form class="navbar-form navbar-right">
+	<ul class="nav navbar-nav">
+		<li><a href="#"><strong>Home</strong></a></li>
+		<li><a href="#about"><strong>About me</strong></a></li>
+		<li><a href="#contact"><strong>Contact</strong></a></li>
+	</ul>
+	</form>
+
+	
+</nav>
+
+<div class="bg" >
+	<img src="lap.jpg" alt="Image"  width="100%" height="50%">
+</div>
+<div class="container bg-1 text-center" id="about">
+
+	<h1><strong>Who am I?</strong></h1>
+	<a href="#" class="btn btn-info btn-lg ">
+          <span class="glyphicon glyphicon-user"></span> 
+        </a>
+        <div class="btn-group">
+  <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-leaf"></span> </button>
+  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-certificate"></span> </button>
+  <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> </button>
+  <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-envelope"></span> </button>
+</div>
+
+
+  </div>      
+
+<div class="container bg-2 text-center" id="about">
+ <h1> About Me</h1>
+ <p><strong>A timid Introvert</strong></p>
+ <a href="#demo" data-toggle="collapse">
+		<img src="int.gif" class="img-circle travel" alt="image" width="30%" height="40%">
+		</a>
+		<div id="demo" class="collapse">
+ <p>I am Shruti Singh,student of computer science and engineering department ,Shri Mata Vaishno Devi University.</p>
+ </div>
+</div>
+<div class="container" id=contact>
+  <h2 class="text-center"><strong>Contact</strong></h2>
+  
+  <div class="row test">
+    <div class="col-md-4">
+      
+      <p><span class="glyphicon glyphicon-map-marker"></span>Jammu and Kashmir, INDIA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: shrutisingh72@mail.com</p> 
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-apple"> Send</span> </button>
+        </div>
+         </div> 
+    </div>
+  </div>
+</div>
+<footer class="container bg-4 text-center">
+  <h2> Made By <a href="#">www.Shruti9520.com</a></h2> 
+  <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-education"> </span> </button>
+</footer>
+
+
+</body>
+</html>
